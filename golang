@@ -1,4 +1,25 @@
-Faça um algoritmo que leia três números inteiros e mostre a soma entre eles.
+1: Faça um algoritmo que leia três números inteiros e mostre a soma entre eles.
+
+import "fmt"
+
+func main() {
+	var x int
+	fmt.Print("Qual o primeiro numero? ")
+	fmt.Scan(&x)
+
+	var y int
+	fmt.Print("Qual o segundo numero? ")
+	fmt.Scan(&y)
+
+	var z int
+	fmt.Print("Qual o terceiro numero? ")
+	fmt.Scan(&z)
+
+	var soma int = x + y + z
+
+	fmt.Print("A soma dos numeros listados é ", soma)
+
+2: Faça um algoritmo que leia um número inteiro e mostre o seu dobro, triplo e quadruplo.
 
 import "fmt"
 
@@ -13,6 +34,5 @@ func main() {
 	var quadruplo int = numero * 4
 
 	fmt.Print("Dobro desse numero é  ", dobro, ", triplo desse numero é  ", triplo, ", quadruplo desse numero é  ", quadruplo)
-
-}
-
+	
+3: 	
