@@ -19,6 +19,8 @@ func main() {
 
 	fmt.Print("A soma dos numeros listados é ", soma)
 
+}
+
 2: Faça um algoritmo que leia um número inteiro e mostre o seu dobro, triplo e quadruplo.
 
 import "fmt"
@@ -34,5 +36,78 @@ func main() {
 	var quadruplo int = numero * 4
 
 	fmt.Print("Dobro desse numero é  ", dobro, ", triplo desse numero é  ", triplo, ", quadruplo desse numero é  ", quadruplo)
+
+}
 	
-3: 	
+3: Faça um algoritmo que leia o peso e a altura de uma pessoa e calcule o seu IMC (Índice de Massa Corporal).
+
+import "fmt"
+
+func main() {
+	var peso float64
+	fmt.Print("Qual o seu peso? ")
+	fmt.Scan(&peso)
+
+	var altura float64
+	fmt.Print("Qual a sua altura? ")
+	fmt.Scan(&altura)
+
+	var IMC float64 = peso / (altura * altura)
+	fmt.Print("Seu índice de massas corporal é  ", IMC)
+}
+
+	
+4: Faça um algoritmo que leia três números reais e mostre a média ponderada entre eles, com pesos 2, 3 e 5, respectivamente.
+
+import "fmt"
+
+func main() {
+	var x float64
+	fmt.Print("Escreva o primeiro número")
+	fmt.Scan(&x)
+
+	var y float64
+	fmt.Print("Escreva o segundo número")
+	fmt.Scan(&y)
+
+	var z float64
+	fmt.Print("Escreva o terceiro número")
+	fmt.Scan(&z)
+
+	var media float64 = (x*2 + y*3 + z*5) / 10
+	fmt.Print("A média ponderada destes três números é  ", media)
+
+}
+
+	
+5: Faça um algoritmo que leia a idade de uma pessoa em anos e mostre a idade em dias.
+
+import "fmt"
+
+func main() {
+	var x int
+	fmt.Print("Quantos anos você tem? ")
+	fmt.Scan(&x)
+
+	var y int
+	fmt.Print("Quantos meses se passaram desde seu ultimo aniversário? ")
+	fmt.Scan(&y)
+
+	var z int = x*365 + y*30
+	fmt.Print("Você tem ", z, " dias de vida")
+
+}
+
+6: Faça um algoritmo que leia o salário de um funcionário e calcule o seu novo salário com um aumento de 15%.
+
+import "fmt"
+
+func main() {
+	var x float64
+	fmt.Print("Qual seu salário? ")
+	fmt.Scan(&x)
+
+	var aumento float64 = (x * 0.15) + x
+	fmt.Print("Após o aumento de 15%, seu salário é  ", aumento, " reais")
+
+}
